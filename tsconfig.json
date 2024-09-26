@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",               // Папка для скомпилированных JS файлов
+    "module": "ES6",                  // Модульная система
+    "target": "ES5",                  // Версия JS, с которой хотите работать
+    "jsx": "react",                   // Поддержка JSX для React
+    "allowJs": true,                  // Разрешить компиляцию JS файлов
+    "moduleResolution": "node",       // Модульная резолюция для Node.js
+    "esModuleInterop": true,          // Для корректной работы с CommonJS
+    "forceConsistentCasingInFileNames": true, // Следит за регистрами
+    "strict": true,                    // Включает строгие проверки TypeScript
+    "lib": [ "ES6", "dom" ],
+  },
+  "include": ["src/**/*"],            // Все файлы внутри папки src будут компилироваться
+  "exclude": ["node_modules", "dist"] // Исключаем ненужные файлы
+}
